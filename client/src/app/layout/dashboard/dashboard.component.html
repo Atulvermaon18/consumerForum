@@ -1,0 +1,22 @@
+<div [@routerTransition] classs="container">
+    <h2 class="text-muted">Consumer Forum <small>Latest Overview</small></h2>
+    <app-modal></app-modal>
+    <div class="row" >
+            <div class="col col-sm-12" *ngFor="let forum of forumList">
+            <div class="card mb-12">
+                <div class="card-header">
+                  {{forum.heading}}
+                </div> 
+                <div class="card-body">
+               {{forum.description}}
+                </div>
+                <div class="card-footer">
+                    <label>Author: {{forum.createdBy}}</label>
+                </div>
+            </div><br>
+        </div>
+    </div>
+
+
+
+</div>
